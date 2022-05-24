@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            CUTE Roadmap Generator
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="CUTE Roadmap Generator" name="description"/>
+        <meta content="hando.es" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" />
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-stylesheet" rel="stylesheet" type="text/css"/>
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
+        <!-- App Css-->
+        <link
+            href="assets/css/app.min.css"
+            id="app-stylesheet"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <link href="assets/css/roadmap.css" rel="stylesheet" type="text/css" />
+        <link
+            href="assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/libs/switchery/switchery.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <link
+            href="assets/libs/multiselect/multi-select.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="assets/libs/select2/select2.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css"
+            rel="stylesheet"
+        />
+        <link href="assets/libs/switchery/switchery.min.css" rel="stylesheet" />
+        <link
+            href="assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/libs/bootstrap-datepicker/bootstrap-datepicker.css"
+            rel="stylesheet"
+        />
+        <link
+            href="assets/libs/bootstrap-daterangepicker/daterangepicker.css"
+            rel="stylesheet"
+        />
+
+        <link
+            href="assets/libs/quill/quill.core.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="assets/libs/quill/quill.bubble.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="assets/libs/quill/quill.snow.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+
+    <body data-layout="horizontal" data-topbar="dark">
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Navigation Bar-->
+            <header id="topnav">
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-right mb-0">
+                              <li class="dropdown notification-list">
+                                <p class="nav-link right-bar-toggle">
+                                    <span id="counter-span" style="color: white; font-weight: 800 ">
+                                </span>
+                                    </p>
+                            </li>
+                             <li class="dropdown notification-list previous list-inline-item json-traverse">
+                                <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect" id="prev-action">
+                                    <i class="mdi mdi-arrow-left-circle-outline noti-icon"></i> PREV
+                                </a>
+                            </li>
+                              <li class="dropdown notification-list next json-traverse">
+                                <a href="javascript:void(0);" class=" nav-link right-bar-toggle waves-effect" id="next-action"> <i class="mdi mdi-arrow-right-circle-outline noti-icon"></i> NEXT</a>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect"
+                                    id="upload-opener">
+                                    <i class="fe-edit noti-icon"></i> IMPORT
+                                </a>
+                            </li>
+                           
+                            <li class="dropdown notification-list">
+                                <a
+                                    href="javascript:void(0);"
+                                    class="
+                                        nav-link
+                                        right-bar-toggle
+                                        waves-effect
+                                    "
+                                >
+                                    <i class="fe-map noti-icon"></i> SEE ROADMAP
+                                </a>
+                            </li>
+                            <li class="dropdown notification-list">
+                                <a
+                                    href="javascript:void(0);"
+                                    class="
+                                        nav-link
+                                        right-bar-toggle
+                                        waves-effect
+                                    "
+                                >
+                                    <i class="fe-help-circle noti-icon"></i>
+                                    HELP
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <!-- LOGO -->
+                        <div class="logo-box">
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-lg">
+                                    <img
+                                        src="assets/images/cute.png"
+                                        alt=""
+                                        height="65"
+                                    />
+                                </span>
+                                <span class="logo-sm">
+                                    <img
+                                        src="assets/images/cute.png"
+                                        alt=""
+                                        height="65"
+                                    />
+                                </span>
+                            </a>
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-lg">
+                                    <img
+                                        src="assets/images/cute.png"
+                                        alt=""
+                                        height="65"
+                                    />
+                                </span>
+                                <span class="logo-sm">
+                                    <img
+                                        src="assets/images/cute.png"
+                                        alt=""
+                                        height="65"
+                                    />
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end container-fluid-->
+                </div>
+                <!-- end Topbar -->
+            </header>
+            <!-- End Navigation Bar-->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2 class="titulo mb-3">
+                                            Roadmap generator
+                                        </h2>
+
+                                        <form>
+                                            <div id="progressbarwizard">
+                                                <ul
+                                                    class="
+                                                        nav nav-pills
+                                                        bg-light
+                                                        nav-justified
+                                                        form-wizard-header
+                                                        mb-1
+                                                    "
+                                                >
+                                                    <li class="nav-item">
+                                                        <a
+                                                            href="#paso1"
+                                                            data-toggle="tab"
+                                                            class="nav-paso1 btn-arrow-right 
+                                                                nav-link
+                                                                rounded-0
+                                                                pt-2
+                                                                pb-2
+                                                            "
+                                                        >
+                                                            <span
+                                                                class="
+                                                                    d-none
+                                                                    d-sm-inline
+                                                                "
+                                                                >1</span
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            href="#paso2"
+                                                            data-toggle="tab"
+                                                            class="nav-paso2 btn-arrow-right 
+                                                                nav-link
+                                                                rounded-0
+                                                                pt-2
+                                                                pb-2
+                                                            "
+                                                        >
+                                                            <span
+                                                                class="
+                                                                    d-none
+                                                                    d-sm-inline
+                                                                "
+                                                                >2</span
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            href="#paso3"
+                                                            data-toggle="tab"
+                                                            class="nav-paso3 btn-arrow-right 
+                                                                nav-link
+                                                                rounded-0
+                                                                pt-2
+                                                                pb-2
+                                                            "
+                                                        >
+                                                            <span
+                                                                class="
+                                                                    d-none
+                                                                    d-sm-inline
+                                                                "
+                                                                >3</span
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            href="#paso4"
+                                                            data-toggle="tab"
+                                                            class="nav-paso4 btn-arrow-right 
+                                                                nav-link
+                                                                rounded-0
+                                                                pt-2
+                                                                pb-2
+                                                            "
+                                                        >
+                                                            <span
+                                                                class="
+                                                                    d-none
+                                                                    d-sm-inline
+                                                                "
+                                                                >4</span
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a
+                                                            href="#paso5"
+                                                            data-toggle="tab"
+                                                            class="nav-paso5 btn-arrow-right 
+                                                                nav-link
+                                                                rounded-0
+                                                                pt-2
+                                                                pb-2
+                                                            "
+                                                        >
+                                                            <span
+                                                                class="
+                                                                    d-none
+                                                                    d-sm-inline
+                                                                "
+                                                                >5</span
+                                                            >
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="nav-item">
+                                                        <a
+                                                            href="#save"
+                                                            data-toggle="tab"
+                                                            class="btn-arrow-save nav-paso-save 
+                                                                nav-link
+                                                                rounded-0
+                                                                pt-2
+                                                                pb-2
+                                                            "
+                                                            id="save-button"
+                                                        >
+                                                            <i
+                                                                class="
+                                                                    mdi
+                                                                    mdi-checkbox-marked-circle-outline
+                                                                    mr-1
+                                                                "
+                                                            ></i>
+                                                            <span
+                                                                class="
+                                                                    d-none
+                                                                    d-sm-inline
+                                                                "
+                                                                >SAVE</span
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div
+                                                    class="
+                                                        tab-content
+                                                        border-0
+                                                        mb-0
+                                                    "
+                                                >
+                                                    <div
+                                                        id="bar"
+                                                        class="
+                                                            progress
+                                                            mb-3
+                                                            mt-0
+                                                        "
+                                                        style="height: 7px"
+                                                    >
+                                                        <div
+                                                            class="
+                                                                bar
+                                                                progress-bar
+                                                                progress-bar-striped
+                                                                progress-bar-animated
+                                                                bg-success
+                                                            "
+                                                        ></div>
+                                                    </div>
+
+                                                    <div
+                                                                                                      <div class="tab-pane" id="paso1">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="p-2">
+                                                                    <h5>1-ACTION NAME OR IDENTIFIER</h5>
+                                                                    <input type="text" class="form-control" maxlength="100" name="actionname"  id="actionname" />
+                                                                </div>
+                                                                <div class="p-2">
+                                                                    <h5>ACTION NUMBER</h5>
+                                                                    <input type="number" class="form-control" maxlength="100" name="number" id="number" />
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                             <div class="col-md-6">
+                                                                <div class="p-2">
+                                                                    <h5>2-PRIORITIES OF THIS ACTION</h5>
+                                                                    <p class="text-muted font-13">
+                                                                        Select one or multiples options
+                                                                    </p>
+                                                                     <select
+                                                                        multiple
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        id="priorities-select"
+                                                                    >
+                                                                        <option
+                                                                            value="Training"
+                                                                        >
+                                                                            Training
+                                                                        </option>
+                                                                        <option
+                                                                            value="Continuous Professional Development"
+                                                                        >
+                                                                            Continuous
+                                                                            Professional
+                                                                            Development
+                                                                        </option>
+                                                                        <option
+                                                                            value="Organizing the work"
+                                                                        >
+                                                                            Organizing
+                                                                            the
+                                                                            work
+                                                                        </option>
+                                                                        <option
+                                                                            value="Managing people"
+                                                                        >
+                                                                            Managing
+                                                                            people
+                                                                        </option>
+                                                                        <option
+                                                                            value="Digital Technologies (Apps, Software & Hardware"
+                                                                        >
+                                                                            Digital
+                                                                            Technologies
+                                                                            (Apps,
+                                                                            Software
+                                                                            &
+                                                                            Hardware)
+                                                                        </option>
+                                                                        <option
+                                                                            value="On-campus facilities"
+                                                                        >
+                                                                            On-campus
+                                                                            facilities
+                                                                        </option>
+                                                                        <option
+                                                                            value="Educational Model"
+                                                                        >
+                                                                            Educational
+                                                                            Model
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="p-2">
+                                                                  <p class="text-muted font-13" >
+                                                                        Another priority:
+                                                                    </p>
+                                                                  <input
+                                                                        type="text"
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        maxlength="100"
+                                                                        name="alt-priority"
+                                                                        id="alt-priority"
+                                                                    />
+                                                                </div>
+                                                            </div> <!-- end col -->
+                                                        </div> <!-- end row -->
+                                                    </div>
+                                                          
+
+                                                    <div
+                                                        class="tab-pane"
+                                                        id="paso2"
+                                                    >
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        3-PEOPLE
+                                                                    </h5>
+                                                                    <p
+                                                                        class="
+                                                                            text-muted
+                                                                            font-13
+                                                                        "
+                                                                    >
+                                                                        Who is
+                                                                        going to
+                                                                        lead
+                                                                        this
+                                                                        action?
+                                                                        Who is
+                                                                        going to
+                                                                        be
+                                                                        involved
+                                                                        in each
+                                                                        action
+                                                                        (executing)?
+                                                                        Who is
+                                                                        going to
+                                                                        be
+                                                                        directly
+                                                                        affected
+                                                                        by each
+                                                                        action
+                                                                        (target
+                                                                        group)?
+                                                                        Who are
+                                                                        the
+                                                                        beneficiaries
+                                                                        of this
+                                                                        action?
+                                                                    </p>
+                                                                    <textarea
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        rows="9"
+                                                                        id="people-textarea"
+                                                                    ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        4-ACTION-TIME
+                                                                        SCALE
+                                                                    </h5>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                time-scale
+                                                                            "
+                                                                            id="customCheck1"
+                                                                            value="Short term (1-6 months)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="customCheck1"
+                                                                            >Short
+                                                                            term
+                                                                            (1-6
+                                                                            months)</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                time-scale
+                                                                            "
+                                                                            id="customCheck2"
+                                                                            value="Medium term (6 months to 1 year)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="customCheck2"
+                                                                            >Medium
+                                                                            term
+                                                                            (6
+                                                                            months
+                                                                            to 1
+                                                                            year)</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                time-scale
+                                                                            "
+                                                                            id="customCheck3"
+                                                                            value="Long term (+ 1 year)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="customCheck3"
+                                                                            >Long
+                                                                            term
+                                                                            (+1
+                                                                            year)</label
+                                                                        >
+                                                                    </div>
+                                                                    <p
+                                                                        class="
+                                                                            text-muted
+                                                                            font-13
+                                                                            mt-3
+                                                                        "
+                                                                    >
+                                                                        Action-Time
+                                                                        Scale
+                                                                        (please
+                                                                        be more
+                                                                        specific
+                                                                        if it is
+                                                                        possible)
+                                                                    </p>
+                                                                    <textarea
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        rows="5"
+                                                                        id="scale-textarea"
+                                                                    ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+
+                                                    <div
+                                                        class="tab-pane"
+                                                        id="paso3"
+                                                    >
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        5-IMPACT
+                                                                    </h5>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                impact
+                                                                            "
+                                                                            id="impact1"
+                                                                            value="Small scale (single practice, small group, single discipline, etc.)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="impact1"
+                                                                            >Small
+                                                                            scale
+                                                                            (single
+                                                                            practice,
+                                                                            small
+                                                                            group,
+                                                                            single
+                                                                            discipline,
+                                                                            etc.)</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                impact
+                                                                            "
+                                                                            id="impact2"
+                                                                            value="Large scale (at a College or institutional level)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="impact2"
+                                                                            >Large
+                                                                            scale
+                                                                            (at
+                                                                            a
+                                                                            College
+                                                                            or
+                                                                            institutional
+                                                                            level
+                                                                            )</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                impact
+                                                                            "
+                                                                            id="impact3"
+                                                                            value="Transformative (significant, permanent change that alters practice and perspective, perhaps also at a sectoral rather than single institutional level)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="impact3"
+                                                                            >Transformative
+                                                                            (significant,
+                                                                            permanent
+                                                                            change
+                                                                            that
+                                                                            alters
+                                                                            practice
+                                                                            and
+                                                                            perspective,
+                                                                            perhaps
+                                                                            also
+                                                                            at a
+                                                                            sectoral
+                                                                            rather
+                                                                            than
+                                                                            single
+                                                                            institutional
+                                                                            level)</label
+                                                                        >
+                                                                    </div>
+                                                                    <p
+                                                                        class="
+                                                                            text-muted
+                                                                            font-13
+                                                                            mt-3
+                                                                        "
+                                                                    >
+                                                                        Impact
+                                                                        (any
+                                                                        comments?)
+                                                                    </p>
+                                                                    <textarea
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        rows="5"
+                                                                        id="impact-textarea"
+                                                                    ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        6-GOALS
+                                                                    </h5>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                goals
+                                                                            "
+                                                                            id="goals1"
+                                                                            value="Strategic Level (related to the institutional mission, vision, and high-level goals, often long term, less tangible, but very important)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="goals1"
+                                                                            >Strategic
+                                                                            Level
+                                                                            (related
+                                                                            to
+                                                                            the
+                                                                            institutional
+                                                                            mission,
+                                                                            vision,
+                                                                            and
+                                                                            high-level
+                                                                            goals,
+                                                                            often
+                                                                            long
+                                                                            term,
+                                                                            less
+                                                                            tangible,
+                                                                            but
+                                                                            very
+                                                                            important)</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-checkbox
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                goals
+                                                                            "
+                                                                            id="goals2"
+                                                                            value="Operational Level (close-distance focused, related to small groups or changes, short term, often easy to measure and quantify)"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="goals2"
+                                                                            >Operational
+                                                                            Level
+                                                                            (close-distance
+                                                                            focused,
+                                                                            related
+                                                                            to
+                                                                            small
+                                                                            groups
+                                                                            or
+                                                                            changes,
+                                                                            short
+                                                                            term,
+                                                                            often
+                                                                            easy
+                                                                            to
+                                                                            measure
+                                                                            and
+                                                                            quantify)</label
+                                                                        >
+                                                                    </div>
+
+                                                                    <p
+                                                                        class="
+                                                                            text-muted
+                                                                            font-13
+                                                                            mt-3
+                                                                        "
+                                                                    >
+                                                                        Goals
+                                                                        (please
+                                                                        explain)
+                                                                    </p>
+                                                                    <textarea
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        rows="5"
+                                                                        id="goals-textarea"
+                                                                    ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+
+                                                    <div
+                                                        class="tab-pane"
+                                                        id="paso4"
+                                                    >
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        7-ACTION
+                                                                        INDICATORS
+                                                                        OF
+                                                                        PROGRESS
+                                                                    </h5>
+                                                                    <div
+                                                                        id="snow-editor"
+                                                                        style="
+                                                                            height: 200px;
+                                                                        "
+                                                                    ></div>
+                                                                    <!-- end Snow-editor-->
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        8-DIGCOMPEDU
+                                                                        AREA(S)
+                                                                        AFFECTED
+                                                                    </h5>
+                                                                    <p
+                                                                        class="
+                                                                            text-muted
+                                                                            font-13
+                                                                        "
+                                                                    >
+                                                                        Choose
+                                                                        all that
+                                                                        apply
+                                                                        from the
+                                                                        DIGCOMPEDU
+                                                                        Framework:
+                                                                    </p>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-switch
+                                                                        "
+                                                                        data-color="#00b19d"
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                affected
+                                                                            "
+                                                                            id="area1"
+                                                                            value="Empowering Learners"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="area1"
+                                                                            >Empowering
+                                                                            Learners</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-switch
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                affected
+                                                                            "
+                                                                            id="area2"
+                                                                            value="Facilitating Learner's Digital Competence"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="area2"
+                                                                            >Facilitating
+                                                                            Learner's
+                                                                            Digital
+                                                                            Competence</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-switch
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                affected
+                                                                            "
+                                                                            id="area3"
+                                                                            value="Assessment"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="area3"
+                                                                            >Assessment</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-switch
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                affected
+                                                                            "
+                                                                            id="area4"
+                                                                            value="Teaching and Learning"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="area4"
+                                                                            >Teaching
+                                                                            and
+                                                                            Learning</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-switch
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                affected
+                                                                            "
+                                                                            id="area5"
+                                                                            value="Digital Resources"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="area5"
+                                                                            >Digital
+                                                                            Resources</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            custom-control
+                                                                            custom-switch
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            class="
+                                                                                custom-control-input
+                                                                                affected
+                                                                            "
+                                                                            id="area6"
+                                                                            value="Professional Engagement"
+                                                                        />
+                                                                        <label
+                                                                            class="
+                                                                                custom-control-label
+                                                                            "
+                                                                            for="area6"
+                                                                            >Professional
+                                                                            Engagement</label
+                                                                        >
+                                                                    </div>
+                                                                    <p
+                                                                        class="
+                                                                            text-muted
+                                                                            font-13
+                                                                            mt-3
+                                                                        "
+                                                                    >
+                                                                        Have you
+                                                                        planned
+                                                                        to work
+                                                                        in this
+                                                                        action
+                                                                        with any
+                                                                        other
+                                                                        CUTE's
+                                                                        partner?
+                                                                    </p>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox1"
+                                                                            value="no"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox1"
+                                                                        >
+                                                                            No</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox2"
+                                                                            value="UCPH"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox2"
+                                                                        >
+                                                                            UCPH</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox3"
+                                                                            value="NUI"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox3"
+                                                                        >
+                                                                            NUI
+                                                                            Galway</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox4"
+                                                                            value="PHOÖ"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox4"
+                                                                        >
+                                                                            PHOÖ</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox5"
+                                                                            value="AGH"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox5"
+                                                                        >
+                                                                            AGH</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox6"
+                                                                            value="UNAK"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox6"
+                                                                        >
+                                                                            UNAK</label
+                                                                        >
+                                                                    </div>
+                                                                    <div
+                                                                        class="
+                                                                            checkbox
+                                                                            checkbox-success
+                                                                            form-check-inline
+                                                                        "
+                                                                    >
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            id="inlineCheckbox7"
+                                                                            value="UM"
+                                                                            class="
+                                                                                alt-affected
+                                                                            "
+                                                                        />
+                                                                        <label
+                                                                            for="inlineCheckbox7"
+                                                                        >
+                                                                            UM</label
+                                                                        >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+
+                                                    <div
+                                                        class="tab-pane"
+                                                        id="paso5"
+                                                    >
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        ACTION
+                                                                        PLAN
+                                                                    </h5>
+                                                                    <textarea
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        rows="7"
+                                                                        id="plan-textarea"
+                                                                    ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+                                                            <div
+                                                                class="col-md-6"
+                                                            >
+                                                                <div
+                                                                    class="p-2"
+                                                                >
+                                                                    <h5>
+                                                                        OBSERVATIONS
+                                                                    </h5>
+                                                                    <textarea
+                                                                        class="
+                                                                            form-control
+                                                                        "
+                                                                        rows="7"
+                                                                        id="observation-textarea"
+                                                                    ></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+
+                                                    <div
+                                                        class="tab-pane"
+                                                        id="save"
+                                                    >
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div
+                                                                    class="
+                                                                        text-center
+                                                                    "
+                                                                >
+                                                                    <h2
+                                                                        class="
+                                                                            mt-0
+                                                                        "
+                                                                    >
+                                                                        <i
+                                                                            class="
+                                                                                mdi
+                                                                                mdi-check-all
+                                                                            "
+                                                                        ></i>
+                                                                    </h2>
+                                                                    <h3
+                                                                        class="
+                                                                            mt-0
+                                                                        "
+                                                                    >
+                                                                        Thank
+                                                                        you !
+                                                                    </h3>
+
+                                                                    <p
+                                                                        class="
+                                                                            w-75
+                                                                            mb-2
+                                                                            mx-auto
+                                                                        "
+                                                                        id="thanks"
+                                                                    >
+                                                                        Please click <strong>SAVE</strong> button to save this action.
+                                                                    </p>
+
+                                                                    <div
+                                                                        class="
+                                                                            mb-3
+                                                                        "
+                                                                    >
+                                                                        <div
+                                                                            class="
+                                                                                custom-control
+                                                                                custom-checkbox
+                                                                            "
+                                                                        >
+                                                                            <a
+                                                                                id="download-anchor"
+                                                                                ><button
+                                                                                    class="
+                                                                                        btn
+                                                                                        btn-success
+                                                                                    "
+                                                                                    id="export-button"
+                                                                                >
+                                                                                    Export
+                                                                                </button></a
+                                                                            >
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- end col -->
+                                                        </div>
+                                                        <!-- end row -->
+                                                    </div>
+
+                                                    <ul
+                                                        class="
+                                                            list-inline
+                                                            mb-0
+                                                            wizard
+                                                        "
+                                                    >
+                                                        <li
+                                                            class="
+                                                                previous
+                                                                list-inline-item
+                                                            "
+                                                        >
+                                                            <a
+                                                                href="javascript: void(0);"
+                                                                class="
+                                                                    btn
+                                                                    btn-secondary
+                                                                "
+                                                                >Previous</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="
+                                                                next
+                                                                list-inline-item
+                                                                float-right
+                                                            "
+                                                        >
+                                                            <a
+                                                                href="javascript: void(0);"
+                                                                class="
+                                                                    btn
+                                                                    btn-secondary
+                                                                "
+                                                                >Next</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- tab-content -->
+                                            </div>
+                                            <!-- end #progressbarwizard-->
+                                        </form>
+                                    </div>
+                                    <!-- end card-body -->
+                                </div>
+                                <!-- end card-->
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- content -->
+            </div>
+
+            <input
+                type="file"
+                name="action.json"
+                id="file-upload"
+                style="display: none"
+            />
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- knob plugin -->
+        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+
+        <!--Morris Chart-->
+        <script src="assets/libs/morris-js/morris.min.js"></script>
+        <script src="assets/libs/raphael/raphael.min.js"></script>
+
+        <!-- Dashboard init js-->
+        <script src="assets/js/pages/dashboard.init.js"></script>
+
+        <!-- Plugins js-->
+        <script src="assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        <script src="assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/libs/switchery/switchery.min.js"></script>
+        <script src="assets/libs/multiselect/jquery.multi-select.js"></script>
+        <script src="assets/libs/jquery-quicksearch/jquery.quicksearch.min.js"></script>
+
+        <script src="assets/libs/select2/select2.min.js"></script>
+        <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/libs/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="assets/libs/moment/moment.js"></script>
+        <script src="assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+        <script src="assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+        <script src="assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <script src="assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+
+        <!-- Plugins js -->
+        <script src="assets/libs/katex/katex.min.js"></script>
+        <script src="assets/libs/quill/quill.min.js"></script>
+
+        <!-- init js -->
+        <script src="assets/js/pages/form-editor.init.js"></script>
+
+        <!-- Init js-->
+        <script src="assets/js/pages/form-wizard.init.js"></script>
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
