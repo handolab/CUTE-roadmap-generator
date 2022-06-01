@@ -1,6 +1,6 @@
 # Roadmap Generator
 
-It is an application to document action plans and export them in a .json file for later use in the Roadmap website.
+It is a modular roadmap that can include all the actions that an institution plan to Foster its Digital Teaching Competence. Each module in the roadmap is an action (to plan the actions you can try the CANVAS of CUTE https://cute.ku.dk/outputs/canvas/), and the roadmap can start with a single module initially and be expanded according to the needs of the specific institution.
 
 ## Usage
 When executing the application, some questions about the action being designed are displayed. Once all the steps are finished, it is saved and the form is blank again to write a new action. You can add all the actions and finally export the .json file with all the information of the actions itinerary (roadmap).
@@ -15,9 +15,9 @@ Applications can be built with [Electron](https://github.com/electron/electron) 
 
 
 ## Overview about project
-The CUTE roadmap is an action plan to improve the DIGCOMPEDU in a higher education institution (it would be used in a Center, Faculty, School, etc.). It is a modular roadmap that can include a single module initially and be expanded according to the needs of the specific institution.
+This Roadmap generator tool has been development in the Project CUTE “ Competencies for Universities - using Technology in Education” during IO2 as a tool to think about and plan tasks using the DigCompEdu to improve digital competencies for university teaching. 
 
-For more information, visit: [CUTE](https://cute.ku.dk/).
+For more information, visit: [CUTE](https://cute.ku.dk/).
 
 ![landing-cute-roadmap-B-Vista-actual](https://user-images.githubusercontent.com/91458022/169350938-219504f1-65d5-4b09-96fd-ed0c923226d9.jpg)
 
@@ -37,10 +37,7 @@ The CUTE Roadmap kit consists of three apps to generate, check and finally publi
 This project is licensed under the MIT License
 
 ## Acknowledgments
-This project is funded by the European Union by the [Erasmus+ program](https://erasmus-plus.ec.europa.eu/)
-
-ERASMUS+: Strategic Partnership (KA203-867FE04B)
-Project period: 1 September 2019 – 31 December 2022
+CUTE “Competencies for Universities - using Technology in Education” is an ERASMUS+: Strategic Partnership (KA203-867FE04B) Project period: 1 September 2019 – 31 December 2022 Funded by the European Comission.
 
 
 ![logo-erasmus](https://user-images.githubusercontent.com/91458022/170667122-5acf85b0-1978-416f-a59e-27f7a7b86094.png)
