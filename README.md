@@ -1,6 +1,6 @@
 # Roadmap Generator
 
-It is a modular roadmap that can include all the actions that an institution plan to Foster its Digital Teaching Competence. Each module in the roadmap is an action (to plan the actions you can try the CANVAS of CUTE https://cute.ku.dk/outputs/canvas/), and the roadmap can start with a single module initially and be expanded according to the needs of the specific institution.
+It is a modular roadmap that can include all the actions that an institution plan to Foster its Digital Teaching Competence. Each module in the roadmap is an action (to plan the actions you can try the CANVAS of CUTE https://cute.ku.dk/outputs/canvas/, and the roadmap can start with a single module initially and be expanded according to the needs of the specific institution.
 
 ## Usage
 When executing the application, some questions about the action being designed are displayed. Once all the steps are finished, it is saved and the form is blank again to write a new action. You can add all the actions and finally export the .json file with all the information of the actions itinerary (roadmap).
