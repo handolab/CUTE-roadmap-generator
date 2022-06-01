@@ -1,4 +1,4 @@
-# Roadmap Generator
+# CUTE Roadmap Generator
 
 It is a modular roadmap that can include all the actions that an institution plan to Foster its Digital Teaching Competence. Each module in the roadmap is an action (to plan the actions you can try the CANVAS of CUTE https://cute.ku.dk/outputs/canvas/, and the roadmap can start with a single module initially and be expanded according to the needs of the specific institution.
 
@@ -25,9 +25,9 @@ For more information, visit: [CUTE](https://cute.ku.dk/).
 The CUTE Roadmap kit consists of three apps to generate, check and finally publish on the web:
 
 
-- Roadmap Generator  | [Link](https://github.com/handolab/CUTE-roadmap-generator)
-- Checker  | [Link](https://github.com/handolab/CUTE-roadmap-checker)
-- Roadmap  | [Link](https://github.com/handolab/CUTE-roadmap-cute)
+- CUTE Roadmap Generator  | [Link](https://github.com/handolab/CUTE-roadmap-generator)
+- CUTE Roadmap Checker  | [Link](https://github.com/handolab/CUTE-roadmap-checker)
+- CUTE Roadmap  | [Link](https://github.com/handolab/CUTE-roadmap-cute)
 
 ![roadmap-apps](https://user-images.githubusercontent.com/91458022/169512277-12e1ed22-e58a-405b-bb8c-80f56008baf5.jpg)
 
