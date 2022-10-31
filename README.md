@@ -8,7 +8,7 @@ When executing the application, some questions about the action being designed a
 ## Last release
 The easiest way to use the roadmap downloading the application (in the version more suitable to your Operating System) and use it locally
 
-[Latest apps](https://github.com/lindacq/CUTE-roadmap-generator/releases/tag/Latest).
+[LATEST RELEASES OF APPS](https://github.com/lindacq/CUTE-roadmap-generator/releases/tag/Latest).
 
 ...PLEASE DON’T CHANGE THE NAME OF THE .JSON
 is the only way to guarantee the final roadmap in html will woks properly
