@@ -5,6 +5,14 @@ It is a modular roadmap that can include all the actions that an institution pla
 ## Usage
 When executing the application, some questions about the action being designed are displayed. Once all the steps are finished, it is saved and the form is blank again to write a new action. You can add all the actions and finally export the .json file with all the information of the actions itinerary (roadmap).
 
+## Last release
+The easiest way to use the roadmap downloading the application (in the version more suitable to your Operating System) and use it locally
+
+[Latest apps](https://github.com/lindacq/CUTE-roadmap-generator/releases/tag/Latest).
+
+...PLEASE DON’T CHANGE THE NAME OF THE .JSON
+is the only way to guarantee the final roadmap in html will woks properly
+
 ![Captura de pantalla 2021-12-09 a las 8 42 20](https://user-images.githubusercontent.com/91458022/169532093-688ff8b2-acd0-41c9-ae75-c6d8482dbb22.png)
 
 
